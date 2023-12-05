@@ -1,27 +1,17 @@
 import { Visual } from "./EntreterimentoVisual";
 
 export class Filmes extends Visual {
-    ExclusivoCinema: boolean;
-    TemNetflix: boolean;
-    TemAmazon: boolean;
+    Views: number = 0;
+    Likes: number = 0;
+    Dislikes: number = 0;
 
-    constructor(nome:string,genero:string,duracao:number,ExclusivoCinema:boolean,TemNetflix:boolean,TemAmazon:boolean){
+    constructor(nome: string, genero: string, Views: number, Likes: number, Dislikes: number) {
         super();
         this.nome = nome;
         this.genero = genero;
-        this.duracao = duracao;
-        this.ExclusivoCinema = ExclusivoCinema;
-        this.TemNetflix = TemNetflix;
-        this.TemAmazon = TemAmazon;
+        this.Views = Views;
+        this.Likes = Likes;
+        this.Dislikes = Dislikes;
     }
 
-    getExclusivoCinema() {
-        return this.ExclusivoCinema;
-    }
-    getTemNetflix() {
-        return this.TemNetflix;
-    }
-    getTemAmazon() {
-        return this.TemAmazon;
-    }
  }
