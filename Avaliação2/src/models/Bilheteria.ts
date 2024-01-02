@@ -8,9 +8,9 @@ class Bilheteria {
     }
 }
 
-const cliente1 = new Cliente("João", 20, 100);
-
-const filme1 = new Filme("O Rei Leão", "aventura", 120, 0, 14);
+const cliente1 = new Cliente("João", 20, 0);
+// titulo, genero, duracao, rating, preco
+const filme1 = new Filme("O Rei Leão", "aventura", 120, 30, 14);
 const Cinemark = new Bilheteria();
 
 Cinemark.venderIngresso(cliente1, filme1);

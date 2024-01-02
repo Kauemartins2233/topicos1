@@ -21,5 +21,9 @@ export class Filme{
         return this.preco;
       }
     
+    getRating(): number {
+        return this.rating;
+      }
+    
 
 }
