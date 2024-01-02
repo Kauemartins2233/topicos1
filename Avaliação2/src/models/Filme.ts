@@ -1,4 +1,4 @@
-class Filme{
+export class Filme{
     private titulo: string;
     private genero: string;
     private duracao: number;
@@ -12,5 +12,14 @@ class Filme{
         this.rating = rating;
         this.preco = preco;
     }
+
+    getTitulo(): string {
+        return this.titulo;
+      }
+    
+      getPreco(): number {
+        return this.preco;
+      }
+    
 
 }
